@@ -22,7 +22,7 @@ var result = '';
 
  }
  console.log(result);*/
- var b =[2 , 4, -2, 7, 2, 4, 2];
+ var b =[2 , 4, -2, 7, -2, 4, 2];
  var  a = b.length;
  var result = true;
  for(i =0, j=a-1 ; i < j; i ++, j--){
