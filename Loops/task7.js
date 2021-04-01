@@ -3,14 +3,11 @@
 var studenti = [['David' , 80], ['Marko', 77], ['Dany', 88], ['John', 95], ['Thomas', 68]];
 var ocene = 0;
 
-for (var i = 0; i < studenti.length; i ++);
-{
-ocene = ocene + studenti[i][1];
+for (var i = 0; i < studenti.length; i ++){
+ocene += studenti[i][1];
 var prosek = (ocene/studenti.length);
-
 }
- 
-console.log(' Average grade :' + (ocene / studenti.length));
+ console.log(' Average grade' + ': ' + (ocene / studenti.length));
      if (prosek < 60)
      {
          console.log(' Grade : F');
@@ -27,7 +24,7 @@ console.log(' Average grade :' + (ocene / studenti.length));
      {
          console.log(' Grade : B');
      }
-     else(prosek < 100)
+     else if(prosek < 100)
      {
          console.log(' Grade : A ')
      } 
