@@ -11,4 +11,4 @@ for(i = a.length;i>p;i --)
     a[i]=a[i-1];
 }
 a[p]=vred;
-console.log('['+a+']');
+console.log(a);
