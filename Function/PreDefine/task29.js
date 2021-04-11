@@ -9,15 +9,15 @@ function letterCount(str , n) {
     
     for(var i = 0; i < str.length; i ++ ){
         if(str.charAt(i) === n){
-            counter += '-'; 
+            counter += n; 
             
         }
         else{
-            counter += '' + str.charAt(i);
+            counter +=  ''  + str.charAt(i);
         }
     }
     return counter;
 }
-console.log(letterCount('My random string', ' ' ));
+console.log(letterCount('My random string', '+' ));
 
 

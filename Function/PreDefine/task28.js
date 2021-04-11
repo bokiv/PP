@@ -21,4 +21,4 @@ function test_prime(n)
   }
 }
 
-console.log(test_prime(13));
+console.log(test_prime(23));

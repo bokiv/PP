@@ -11,5 +11,5 @@ function concatenates(n) {
     }
  return a;   
 }
-var n = 3;
+var n = 7;
 console.log(concatenates(n));
