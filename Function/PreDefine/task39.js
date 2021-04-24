@@ -13,4 +13,4 @@ function emailHide(){
     }
     return result;
 }
-console.log(result);
+console.log(emailHide(email));

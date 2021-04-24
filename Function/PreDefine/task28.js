@@ -16,7 +16,7 @@ function test_prime(n)
            if(n % x === 0){
         return false;
         }
-    }
+      }
     return true;  
   }
 }
