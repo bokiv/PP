@@ -4,10 +4,12 @@
 12 -&gt; false
 false -&gt; false*/
 is_Blank =  function(input) {
-    if (input.length === 0)
+    if (input.length === 0){
     return true;
-    else 
+    }
+    else {
     return false;
+    }
   }
 console.log(is_Blank('My random string'));
 console.log(is_Blank(''));
