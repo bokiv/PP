@@ -137,9 +137,12 @@ console.log(result);
 
 /*c. Write a function that expects an array and a callback function that filters out
 some of the elements. Use functions defined in a) or b) to test it.*/
-var findElements = function(_arr,_callback){
-  
+var findSomeElements = function(arr , findElements(check)){
+  var elem = [];
+  return elem += findElements(arr , b)
   }  
+  var result = findSomeElements(sample , findElements(sample , check));
+  console.log(result);
 
 
 var sample = ["JavaScript", "Programming", "fun", "product"];
