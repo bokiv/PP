@@ -73,8 +73,8 @@ var developer1 = new Developer(
   "fullStack"
 );
 var manager1 = new Manager(
-  "Peros",
-  "Perosic",
+  "Pero",
+  "Peric",
   "Manager",
   1500,
   "High-Level-Managment"
