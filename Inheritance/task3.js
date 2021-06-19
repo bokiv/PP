@@ -6,6 +6,20 @@ function Consumer(name ,licence ,stars){
 Consumer.prototype.printInfo = function(){
     return this.name + " " + this.licence + " " + this.stars;
 }
+Consumer.prototype.like = function(){
+     ++this.stars;
+}
+Consumer.prototype.isCCLicence = function(){
+    if(this.licence === "Creative Commons" ){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+Consumer.prototype.showStars = function(){
+    console.log(this.stars);
+}  
 //Consumer.prototype.printInfo = function(){
 //    console.log(this.getData());
 //}
@@ -28,17 +42,9 @@ WebApp.prototype.reactBased = function(){
         console.log(techno);
     }
 }
-WebApp.prototype.isCCLicence = function(licence ,stars){
-    if(licence === "Creative Commons" ){
-        return stars + 1;
-    }
-}
-WebApp.prototype.showStars = function(){
-    var licen = this.isCCLicence();
-    if(this.stars < licen){
-        return licen;
-    }
-}
+
+
+
 //MobileApp
 function MobileApp(name, platforms, licence, stars){
     Consumer.call(this ,name ,licence ,stars);
@@ -58,27 +64,17 @@ MobileApp.prototype.forAndroid = function(){
         console.log(plat);
     }
 }
-MobileApp.prototype.isCCLicence = function(licence ,stars){
-    if(licence === "Creative Commons" ){
-        return stars + 1;
-    }
-}
-MobileApp.prototype.showStars = function(stars){
-    var licen = this.isCCLicence();
-    if(stars < licen){
-        return this.isCCLicence();
-    }
-}  
+
+
 //Testing
-var consumer1 = new Consumer("Petar" ,"Creative Commons" ,4);
 var webApp1 = new WebApp("Petar" ,"http://example.com" ,"react" ,"Creative Commons" ,4);
 var mobileApp1 = new MobileApp("Petar" ,"android" ,"Creative Commons" ,3)
 webApp1.getData();
-webApp1.isCCLicence("Creative Commons" ,4);
+webApp1.isCCLicence();
 webApp1.reactBased();
 mobileApp1.getData();
 mobileApp1.forAndroid();
-mobileApp1.isCCLicence();
-mobileApp1.showStars(3)
-console.log(mobileApp1.isCCLicence("Creative Commons" ,3));
-console.log(mobileApp1.showStars(3));
+webApp1.showStars();
+webApp1.like();
+webApp1.showStars();
+
