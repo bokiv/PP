@@ -8,9 +8,10 @@ let newArrStr = [];
 let filterArr = arrString.filter(element => {
     for(let i = 0; i < element.length; i++){
         if(element[i].includes("js") || element[i].includes("JS")){
-            newArrStr.push(element)
-            return newArrStr;
+            newArrStr.push(element[i])
+            //return newArrStr;
         }
+        return newArrStr;
     }
 })
 
